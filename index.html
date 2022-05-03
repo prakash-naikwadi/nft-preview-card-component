@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <title>NFT preview card component</title>
+
+  <style>
+
+    html{
+      font-size: 14px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+    }
+
+    h1,p{
+      margin: 0;
+    }
+
+    .container {
+      background-color: hsl(217, 54%, 11%);
+      padding: 3em 1.5em;
+      height: 100vh;
+    }
+
+    .flex-container{
+      display: flex;
+      align-items: center;
+    }
+
+    .card {
+      max-width: 375px;
+      margin: 0 auto;
+      background-color: hsl(216, 50%, 16%);
+      border-radius: 15px;
+      padding: 1.5em;
+    }
+
+    .main-image {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    hr {
+      color: hsl(215, 32%, 27%);
+      margin: 1em 0;
+    }
+
+    /* Typography */
+
+    h1 {
+      color: hsl(0, 0%, 100%);
+      margin: 0.6em 0;
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1.125rem;
+      color: hsl(215, 51%, 70%);
+    }
+
+    .description{
+      margin-bottom: 0.6em;
+      line-height: 1.6;
+    }
+
+    .etherium-count-and-days-left-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .flex {
+      display: flex;
+      align-items: center;
+    }
+
+    .etherium-count-div p{
+      color: hsl(178, 100%, 50%);
+      font-weight: 600;
+
+    }
+
+    .etherium-count-div img,
+    .days-left-div img {
+      margin: 0 0.3125em 0 0;
+    }
+
+    .days-left-div {
+      color: hsl(215, 51%, 70%);
+    }
+
+    .created-by-span {
+      color: hsl(0, 0%, 100%);
+    }
+
+    .profile-description{
+      display: flex;
+      align-items: center;
+    }
+
+    .profile-description img {
+      width: 15%;
+      height: 10%;
+      border: 2px solid hsl(0, 0%, 100%);
+      border-radius: 50%;
+      margin: 0 0.8em 0 0;
+    }
+
+
+  </style>
+
+</head>
+
+<body>
+  <main>
+    <div class="container flex-container">
+      <div class="card">
+        <img class="main-image" src="images/image-equilibrium.jpg" alt="image-equilibrium">
+        <h1 class="title">Equilibrium #3429</h1>
+        <p class="description">Our Equilibrium collection promotes balance and calm.</p>
+
+        <div class="etherium-count-and-days-left-container">
+          <div class="etherium-count-div flex">
+            <img src="images/icon-ethereum.svg" alt="etherium-icon">
+            <p>0.041 ETH</p>
+          </div>
+          <div class="days-left-div flex">
+            <img src="images/icon-clock.svg" alt="icon-clock">
+            <p>3 days left</p>
+          </div>
+        </div>
+
+        <hr>
+        <div class="profile-description">
+          <img class="profile-pic" src="images/image-avatar.png" alt="image-avatar">
+          <p class="created-by">Creation of <span class="created-by-span">Jules Wyvern</span></p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
