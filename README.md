@@ -1,6 +1,6 @@
 # NFT preview card component
 
-- Live Site URL: [Live site URL](https://prakash-naikwadi.github.io/QR-code-component/)
+- Live Site URL: [Live site URL](https://prakash-naikwadi.github.io/nft-preview-card-component/)
 
 ## Table of contents
 
@@ -23,8 +23,8 @@
 
 ### Links
 
-- Solution URL: [Solution URL](https://github.com/prakash-naikwadi/QR-code-component)
-- Live Site URL: [Live site URL](https://prakash-naikwadi.github.io/QR-code-component/)
+- Solution URL: [Solution URL](https://github.com/prakash-naikwadi/nft-preview-card-component)
+- Live Site URL: [Live site URL](https://prakash-naikwadi.github.io/nft-preview-card-component/)
 
 ## My process
 - Started Learning Responsive Web Design By Kevin Powell.
