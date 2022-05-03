@@ -1,4 +1,4 @@
-# QR code component 
+# NFT preview card component
 
 - Live Site URL: [Live site URL](https://prakash-naikwadi.github.io/QR-code-component/)
 
