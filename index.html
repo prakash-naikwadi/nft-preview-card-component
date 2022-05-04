@@ -17,8 +17,7 @@
   <title>NFT preview card component</title>
 
   <style>
-
-    html{
+    html {
       font-size: 14px;
     }
 
@@ -33,7 +32,8 @@
       background-color: white;
     }
 
-    h1,p{
+    h1,
+    p {
       margin: 0;
     }
 
@@ -43,7 +43,7 @@
       height: 100vh;
     }
 
-    .flex-container{
+    .flex-container {
       display: flex;
       align-items: center;
     }
@@ -56,9 +56,50 @@
       padding: 1.5em;
     }
 
-    .main-image {
+    .image-container {
+      position: relative;
       width: 100%;
+    }
+
+
+
+    .main-image {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 100%;
       border-radius: 10px;
+    }
+
+    .overlay-color {
+      background-color: hsl(178, 100%, 50%);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      border-radius: 10px;
+    }
+
+    .overlay-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+    }
+
+    .image-container:hover .overlay-color {
+      opacity: 0.5;
+      cursor: pointer;
+    }
+
+    .image-container:hover .overlay-color+.overlay-image {
+      display: block;
+      cursor: pointer;
     }
 
     hr {
@@ -74,12 +115,17 @@
       font-size: 1.8rem;
     }
 
+    h1:hover {
+      cursor: pointer;
+      color: hsl(178, 100%, 50%);
+    }
+
     p {
       font-size: 1.125rem;
       color: hsl(215, 51%, 70%);
     }
 
-    .description{
+    .description {
       margin-bottom: 0.6em;
       line-height: 1.6;
     }
@@ -94,7 +140,7 @@
       align-items: center;
     }
 
-    .etherium-count-div p{
+    .etherium-count-div p {
       color: hsl(178, 100%, 50%);
       font-weight: 600;
 
@@ -113,7 +159,12 @@
       color: hsl(0, 0%, 100%);
     }
 
-    .profile-description{
+    .created-by-span:hover {
+      color: hsl(178, 100%, 50%);
+      cursor: pointer;
+    }
+
+    .profile-description {
       display: flex;
       align-items: center;
     }
@@ -125,8 +176,6 @@
       border-radius: 50%;
       margin: 0 0.8em 0 0;
     }
-
-
   </style>
 
 </head>
@@ -135,7 +184,12 @@
   <main>
     <div class="container flex-container">
       <div class="card">
-        <img class="main-image" src="images/image-equilibrium.jpg" alt="image-equilibrium">
+        <div class="image-container">
+          <img class="main-image" src="images/image-equilibrium.jpg" alt="image-equilibrium">
+          <div class="overlay-color"></div>
+          <img src="./images/icon-view.svg" alt="overlay-image" class="overlay-image">
+        </div>
+
         <h1 class="title">Equilibrium #3429</h1>
         <p class="description">Our Equilibrium collection promotes balance and calm.</p>
 
